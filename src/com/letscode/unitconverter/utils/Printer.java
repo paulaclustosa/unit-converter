@@ -1,6 +1,6 @@
 package com.letscode.unitconverter.utils;
 
-import static com.letscode.unitconverter.service.Conversion.convertInchToCm;
+import com.letscode.unitconverter.service.Conversion;
 
 public class Printer {
 
@@ -12,7 +12,7 @@ public class Printer {
     }
 
     public static void printConversionResult(float inch) {
-        System.out.printf("%.2f in = %.2f cm", inch, convertInchToCm(inch));
+        System.out.printf("%.2f in = %.2f cm", inch, Conversion.convertInchToCm(inch));
     }
 
 }
